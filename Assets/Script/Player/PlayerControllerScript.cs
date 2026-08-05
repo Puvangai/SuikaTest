@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
 
