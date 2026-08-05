@@ -13,7 +13,7 @@ public class FruitThrowController : MonoBehaviour
     [SerializeField] private FruitSelector _selector;
 
 
-    private PlayerController playerController;
+    private PlayerController _playerController;
 
     private Rigidbody2D _rb;
     private CircleCollider2D _circleCollider;
@@ -36,7 +36,25 @@ public class FruitThrowController : MonoBehaviour
 
     private void Start()
     {
-    
+    _playerController = GetComponent<PlayerController>();
+        SpawnFruit(_selector.PickRandomFruitThrow());
+    }
+
+
+    private void Update()
+    {
+        if (UserInput.IsThrowPressed && CanTHrow)
+        {
+            SpriteIndex index = CurrentFruit.GetComponent<SpriteIndex>();
+            Quaternion rot = CurrentFruit.transform.rotation;
+
+            GameObject go = Instantiate(FruitSelector.Instance.Fruits[index.index], CurrentFruit.transform.position, rot);
+            go.transform.SetParent(_parentAfterThrow);
+
+            Destroy(CurrentFruit);
+
+            CanTHrow = false;
+        }
     }
 
     public void SpawnFruit(GameObject fruit)

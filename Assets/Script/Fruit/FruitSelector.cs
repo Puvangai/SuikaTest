@@ -10,8 +10,8 @@ public class FruitSelector : MonoBehaviour
     public static FruitSelector Instance;
 
 
-    private GameObject[] _fruits; // Meyvelerin prefablarını tutan dizi
-    private GameObject[] _NoPyhsicFruits;
+    public GameObject[] Fruits; // Meyvelerin prefablarını tutan dizi
+    public GameObject[] NoPyhsicFruits;
     public int HighestStartingIndex = 3;
 
 

@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class UserInputScript : MonoBehaviour
+public class UserInput : MonoBehaviour
 {
 
     public static PlayerInput playerInput;

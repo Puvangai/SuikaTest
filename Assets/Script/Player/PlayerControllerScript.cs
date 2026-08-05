@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {           
         print("Oyuncu hareketini güncelliyorum");
-        Vector3 newPosition = transform.position + new Vector3(UserInputScript.MoveInput.x * _movespeed * Time.deltaTime, 0f, 0f);
+        Vector3 newPosition = transform.position + new Vector3(UserInput.MoveInput.x * _movespeed * Time.deltaTime, 0f, 0f);
         newPosition.x = Mathf.Clamp(newPosition.x, _leftBound, _rightBound);
 
        transform.position = newPosition;
