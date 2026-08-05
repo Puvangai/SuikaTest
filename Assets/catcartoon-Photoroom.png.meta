@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5b5d93c3c4d314048a9cbc0fd3b8b315
+guid: 86869f9185d3fb84881e613b3a9208cc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3513444456384637444
-    second: holdanyonehand-Photoroom_0
+      213: -6993985828818895089
+    second: catcartoon-Photoroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: holdanyonehand-Photoroom_0
+      name: catcartoon-Photoroom_0
       rect:
         serializedVersion: 2
-        x: 49
-        y: 183
-        width: 716
-        height: 415
+        x: 77
+        y: 59
+        width: 663
+        height: 706
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cf5d027c1ecbd3fc0800000000000000
-      internalID: -3513444456384637444
+      spriteID: f0f3225c1fe50fe90800000000000000
+      internalID: -6993985828818895089
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      holdanyonehand-Photoroom_0: -3513444456384637444
+      catcartoon-Photoroom_0: -6993985828818895089
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
