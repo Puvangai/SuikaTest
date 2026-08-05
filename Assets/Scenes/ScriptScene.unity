@@ -650,6 +650,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 535609635}
+  - component: {fileID: 535609637}
+  - component: {fileID: 535609636}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -666,13 +668,40 @@ Transform:
   m_GameObject: {fileID: 535609634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16325, y: -0.50458, z: 0}
+  m_LocalPosition: {x: -3.63, y: -0.50458, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1383795549}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535609636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535609634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6616834142b549b44be5962fa52efdf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitThrowController
+--- !u!114 &535609637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535609634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e77a4e7de89c145abe8f149f6c354f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitSelector
+  HighestStartingIndex: 3
+  _nextFruitImage: {fileID: 0}
+  _FruitSprites: []
 --- !u!1 &589169081
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +1924,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 354689166}
   - {fileID: 1572145877}
-  - {fileID: 535609635}
   - {fileID: 1284418527}
   - {fileID: 604576365}
+  - {fileID: 535609635}
