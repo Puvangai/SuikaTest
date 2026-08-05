@@ -687,6 +687,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6616834142b549b44be5962fa52efdf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitThrowController
+  _fruitTransform: {fileID: 0}
+  _parentAfterThrow: {fileID: 0}
+  _selector: {fileID: 0}
 --- !u!114 &535609637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +702,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e77a4e7de89c145abe8f149f6c354f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitSelector
+  Fruits: []
+  NoPyhsicFruits: []
   HighestStartingIndex: 3
   _nextFruitImage: {fileID: 0}
   _FruitSprites: []
@@ -1298,7 +1303,7 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1608,7 +1613,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.16078432}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

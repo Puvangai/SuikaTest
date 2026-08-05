@@ -36,9 +36,9 @@ public class FruitSelector : MonoBehaviour
     {
         int randomIndex = Random.Range(0, HighestStartingIndex + 1); // 0 ile HighestStartingIndex arasında rastgele bir indeks seçiyoruz
 
-        if (randomIndex < _NoPyhsicFruits.Length)
+        if (randomIndex < NoPyhsicFruits.Length)
         {
-            GameObject randomFruit = _NoPyhsicFruits[randomIndex];
+            GameObject randomFruit = NoPyhsicFruits[randomIndex];
             return randomFruit;
         }
 
@@ -51,7 +51,7 @@ public class FruitSelector : MonoBehaviour
 
         if (randomIndex < _FruitSprites.Length)
         {
-            GameObject nextFruit = _NoPyhsicFruits[randomIndex];
+            GameObject nextFruit = NoPyhsicFruits[randomIndex];
         }
     }
 
