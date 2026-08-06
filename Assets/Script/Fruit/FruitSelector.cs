@@ -50,11 +50,22 @@ public class FruitSelector : MonoBehaviour
 
     public void PickNextFruit()
     {
-        int randomIndex = Random.Range(0, HighestStartingIndex + 1); // 0 ile HighestStartingIndex arasında rastgele bir indeks seçiyoruz
+        int randomIndex = Random.Range(0, HighestStartingIndex + 1);
 
-        if (randomIndex < Fruits.Length)
+        if (randomIndex < NoPyhsicFruits.Length)
         {
-            GameObject nextFruit = NoPyhsicFruits[randomIndex];
+            // "GameObject" kelimesini kaldırdık! Doğrudan property'ye atıyoruz:
+            NextFruit = NoPyhsicFruits[randomIndex];
+
+            // Eğer UI üzerindeki resmi de değiştireceksen:
+            if (_nextFruitImage != null && _FruitSprites.Length > randomIndex)
+            {
+                _nextFruitImage.sprite = _FruitSprites[randomIndex];
+            }
+        }
+        else
+        {
+            Debug.LogError("Rastgele seçilen indeks NoPyhsicFruits dizisini aşıyor!");
         }
     }
 }

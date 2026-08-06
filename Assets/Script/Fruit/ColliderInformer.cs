@@ -12,10 +12,21 @@ public class ColliderInformer : MonoBehaviour
     {
         if (!_hasCollided && !WasCombineIn)
         {
+            // Meyveyi doğurmadan önce null olup olmadığını kontrol edin
+            if (FruitSelector.Instance.NextFruit != null)
+            {
+                FruitThrowController.Instance.SpawnAFruit(FruitSelector.Instance.NextFruit);
+
+                // Yeni meyve elinize geldikten sonra bir sonraki meyveyi seçtirin
+                FruitSelector.Instance.PickNextFruit();
+            }
+            else
+            {
+                Debug.LogError("FruitSelector içindeki NextFruit henüz atanmamış (NULL)!");
+            }
             _hasCollided = true;
             FruitThrowController.Instance.CanThrow = true;
-            FruitThrowController.Instance.SpawnAFruit(FruitSelector.Instance.NextFruit);
-            FruitSelector.Instance.PickNextFruit();
+           
             Destroy(this);
         }
     }
