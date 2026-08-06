@@ -733,7 +733,7 @@ MonoBehaviour:
   - {fileID: 9127018966690940251, guid: 883f68e28c126a747a7fa56c4ead158a, type: 3}
   - {fileID: 2427168826840269140, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
   - {fileID: 8702335548019409513, guid: 9b606665bd6ae5849815d079ee6e24c8, type: 3}
-  HighestStartingIndex: 3
+  HighestStartingIndex: 4
   _nextFruitImage: {fileID: 1855700071}
   _FruitSprites:
   - {fileID: 21300000, guid: e6cea088202a4fe4fbd32ca6eb84a956, type: 3}
