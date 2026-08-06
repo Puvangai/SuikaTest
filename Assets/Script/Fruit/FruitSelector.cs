@@ -19,7 +19,7 @@ public class FruitSelector : MonoBehaviour
     [SerializeField] private Sprite[] _FruitSprites;
 
 
-    private GameObject NextFruit { get; set; } // Bir sonraki meyveyi temsil eden GameObject
+    public GameObject NextFruit { get; private set; } // Bir sonraki meyveyi temsil eden GameObject
 
 
     private void Awake()
@@ -30,7 +30,10 @@ public class FruitSelector : MonoBehaviour
         }
     }
 
-
+    private void Start()
+    {
+        PickNextFruit();
+    }
 
     public GameObject PickRandomFruitThrow()
     {
@@ -49,7 +52,7 @@ public class FruitSelector : MonoBehaviour
     {
         int randomIndex = Random.Range(0, HighestStartingIndex + 1); // 0 ile HighestStartingIndex arasında rastgele bir indeks seçiyoruz
 
-        if (randomIndex < _FruitSprites.Length)
+        if (randomIndex < Fruits.Length)
         {
             GameObject nextFruit = NoPyhsicFruits[randomIndex];
         }

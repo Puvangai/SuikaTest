@@ -1,47 +1,50 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class AimLineController : MonoBehaviour
 {
+    [SerializeField] private Transform _fruitThrowTransform;
+    [SerializeField] private Transform _bottomTransform;
 
-    [SerializeField] private Transform _fruitThrowTransform; // Fruit'in pozisyonunu temsil eden Transform referansı
-    [SerializeField] private Transform _bottomTransform; // Çizginin alt kısmını temsil eden Transform referansı
-
-    //Line Renderer componentini tutacak değişken
     private LineRenderer _lineRenderer;
 
-
-    private float _topPos; //Line Renderer'ın üst pozisyonu
-    private float _bottomPos; //Line Renderer'ın alt pozisyonu
-    private float _x; //Line Renderer'ın bulunduğu x pozisyonu
-
-
+    private float _topPos;
+    private float _bottomPos;
+    private float _x;
 
     private void Awake()
     {
-        _lineRenderer = GetComponent<LineRenderer>(); // Line Renderer componentini al atama yapıyoruz
-    }
-
-    private void Update()
-    {
-        _x = _fruitThrowTransform.position.x; // Fruit'in x pozisyonunu alıyoruz
-        _topPos = _fruitThrowTransform.position.y; // Fruit'in üst pozisyonunu alıyoruz
-        _bottomPos = _bottomTransform.position.y; //Fruit'in alt pozisyonunu alıyoruz
-
-
-        _lineRenderer.SetPosition(0, new Vector3(_x, _topPos)); //Line Renderer'ın üst pozisyonunu ayarlıyoruz
-        _lineRenderer.SetPosition(1, new Vector3(_x, _bottomPos)); //Line Renderer'ın alt pozisyonunu ayarlıyoruz
-    }
-
-
-    private void OnValidate() //Bu metod, Unity editöründe değişiklik yapıldığında çağrılır ve Line Renderer'ın pozisyonlarını günceller + olarak bu metod oyun çalışmazjen bile çalışır.
-    {
         _lineRenderer = GetComponent<LineRenderer>();
+    }
+
+    // UPDATE YERİNE LATEUPDATE KULLANIYORUZ
+    private void LateUpdate()
+    {
+        // LateUpdate, diğer tüm scriptlerdeki Update metodları bittikten sonra çalışır.
+        // Böylece karakterin hareketi kesin olarak bittikten sonra çizgi çizilir ve esneme olmaz.
         _x = _fruitThrowTransform.position.x;
         _topPos = _fruitThrowTransform.position.y;
         _bottomPos = _bottomTransform.position.y;
 
+        // Z eksenini 0'a sabitlemek 2D kameralarda parlamaları/kaymaları önler
+        _lineRenderer.SetPosition(0, new Vector3(_x, _topPos, 0f));
+        _lineRenderer.SetPosition(1, new Vector3(_x, _bottomPos, 0f));
+    }
 
-        _lineRenderer.SetPosition(0, new Vector3(_x, _topPos));
-        _lineRenderer.SetPosition(1, new Vector3(_x, _bottomPos));
+    private void OnValidate()
+    {
+        _lineRenderer = GetComponent<LineRenderer>();
+
+        // OnValidate'in çalışabilmesi için referansların atanmış olduğundan emin olmak iyidir
+        if (_fruitThrowTransform != null && _bottomTransform != null && _lineRenderer != null)
+        {
+            _x = _fruitThrowTransform.position.x;
+            _topPos = _fruitThrowTransform.position.y;
+            _bottomPos = _bottomTransform.position.y;
+
+            _lineRenderer.SetPosition(0, new Vector3(_x, _topPos, 0f));
+            _lineRenderer.SetPosition(1, new Vector3(_x, _bottomPos, 0f));
+        }
     }
 }

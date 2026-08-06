@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 public class UserInput : MonoBehaviour
 {
 
-    public static PlayerInput playerInput;
+    public static PlayerInput PlayerInput;
 
     public static Vector2 MoveInput { get; set; }
 
@@ -12,11 +12,12 @@ public class UserInput : MonoBehaviour
     private InputAction _moveAction;
     private InputAction _throwAction;
 
-    void Awake()
+    private void Awake()
     {
-        playerInput = GetComponent<PlayerInput>();
-        _moveAction = playerInput.actions["Move"];
-        _throwAction = playerInput.actions["Throw"];
+        PlayerInput = GetComponent<PlayerInput>();
+
+        _moveAction = PlayerInput.actions["Move"];
+        _throwAction = PlayerInput.actions["Throw"];
     }
 
     private void Update()

@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        print("Değişkenleri eşitledim");
         _bounds = _boundaries.bounds;
 
         _offset = transform.position.x - _fruitThrowTransform.position.x;
@@ -40,7 +39,6 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {           
-        print("Oyuncu hareketini güncelliyorum");
         Vector3 newPosition = transform.position + new Vector3(UserInput.MoveInput.x * _movespeed * Time.deltaTime, 0f, 0f);
         newPosition.x = Mathf.Clamp(newPosition.x, _leftBound, _rightBound);
 

@@ -395,6 +395,37 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &155285860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155285861}
+  m_Layer: 0
+  m_Name: ThrowFruitTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155285861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155285860}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.57, y: 0.39, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1284418527}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &278512071
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,7 +698,7 @@ Transform:
   m_GameObject: {fileID: 535609634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.87, y: -0.50458, z: 0}
+  m_LocalPosition: {x: -4.18, y: -0.50458, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -703,7 +734,7 @@ MonoBehaviour:
   - {fileID: 2427168826840269140, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
   - {fileID: 8702335548019409513, guid: 9b606665bd6ae5849815d079ee6e24c8, type: 3}
   HighestStartingIndex: 3
-  _nextFruitImage: {fileID: 1855700071}
+  _nextFruitImage: {fileID: 2046259321}
   _FruitSprites:
   - {fileID: 21300000, guid: e6cea088202a4fe4fbd32ca6eb84a956, type: 3}
   - {fileID: 21300000, guid: d450468f629999a4487e7ddad32cace1, type: 3}
@@ -817,7 +848,7 @@ Transform:
   m_GameObject: {fileID: 589169081}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.89, y: 0.655, z: 0}
+  m_LocalPosition: {x: -0.36, y: 0.655, z: 0}
   m_LocalScale: {x: 0.14214, y: 0.14214, z: 0.4738}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1402,7 +1433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45cb5ffcacfaf044b9de96318c69d8b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AimLineController
-  _fruitThrowTransform: {fileID: 1855495381}
+  _fruitThrowTransform: {fileID: 155285861}
   _bottomTransform: {fileID: 278512072}
 --- !u!114 &1284418525
 MonoBehaviour:
@@ -1418,7 +1449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   _movespeed: 5
   _boundaries: {fileID: 1932758397}
-  _fruitThrowTransform: {fileID: 1855495381}
+  _fruitThrowTransform: {fileID: 155285861}
 --- !u!120 &1284418526
 LineRenderer:
   serializedVersion: 3
@@ -1445,7 +1476,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 409d6c445bc82f743aca250f6f9ab709, type: 2}
+  - {fileID: 2100000, guid: 1270fe49425e78f40b2fb571ec97d2f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1469,8 +1500,8 @@ LineRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Positions:
-  - {x: -0.311, y: 1.63536, z: 0}
-  - {x: -0.311, y: -4.47, z: 0}
+  - {x: -1.26, y: 2.3600001, z: 0}
+  - {x: -1.26, y: -4.46, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.1
@@ -1538,12 +1569,12 @@ Transform:
   m_GameObject: {fileID: 1284418523}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.75, y: 1.96, z: 0}
+  m_LocalPosition: {x: 0.31, y: 1.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1855495381}
   - {fileID: 278512072}
+  - {fileID: 155285861}
   - {fileID: 589169082}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1559,7 +1590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6616834142b549b44be5962fa52efdf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitThrowController
-  _fruitTransform: {fileID: 1855495381}
+  _fruitTransform: {fileID: 155285861}
   _parentAfterThrow: {fileID: 535609635}
   _selector: {fileID: 535609637}
 --- !u!1 &1368472002
@@ -2076,37 +2107,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1855495380
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1855495381}
-  m_Layer: 0
-  m_Name: ThrowFruitTransform
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1855495381
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1855495380}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.061, y: -0.32464004, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1284418527}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855700069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,7 +2124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1855700070
 RectTransform:
   m_ObjectHideFlags: 0

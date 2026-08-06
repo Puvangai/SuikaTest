@@ -48,8 +48,6 @@ public class FruitThrowController : MonoBehaviour
             SpriteIndex index = CurrentFruit.GetComponent<SpriteIndex>();
             Quaternion rot = CurrentFruit.transform.rotation;
 
-            Debug.Log("Throwing fruit with index: " + index.index);
-            Debug.Log(FruitSelector.Instance);
             GameObject go = Instantiate(FruitSelector.Instance.Fruits[index.index], CurrentFruit.transform.position, rot); 
             go.transform.SetParent(_parentAfterThrow);
 
@@ -61,10 +59,16 @@ public class FruitThrowController : MonoBehaviour
 
     public void SpawnAFruit(GameObject fruit)
     {
-         GameObject go = Instantiate(fruit, _fruitTransform);
-         CurrentFruit = go;
-         _circleCollider = CurrentFruit.GetComponent<CircleCollider2D>();
-         Bounds = _circleCollider.bounds;
+        // Meyveyi parent olarak _fruitTransform altına doğuruyoruz
+        GameObject go = Instantiate(fruit, _fruitTransform);
+
+        // KESİN ÇÖZÜM: Meyvenin yerel pozisyonunu tam (0,0,0) noktasına (yani ThrowFruitTransform'un merkezine) eşitliyoruz
+        go.transform.localPosition = Vector3.zero;
+        go.transform.localRotation = Quaternion.identity;
+
+        CurrentFruit = go;
+        _circleCollider = CurrentFruit.GetComponent<CircleCollider2D>();
+        Bounds = _circleCollider.bounds;
 
         _playerController.ChangeBoundary(EXTRA_WIDTH);
         _selector.PickNextFruit();
