@@ -2,15 +2,20 @@ using UnityEngine;
 
 public class FruitInfo : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public int FruitIndex;
+    public int PointWhenAnnihilated;
+    public float FruitMass = 1f;
+
+    private Rigidbody _rb;
+
+    private void Awake()
     {
-        
+        _rb = GetComponent<Rigidbody>();
+        _rb.mass = FruitMass;    
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
+
 }
