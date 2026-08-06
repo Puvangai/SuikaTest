@@ -48,7 +48,9 @@ public class FruitThrowController : MonoBehaviour
             SpriteIndex index = CurrentFruit.GetComponent<SpriteIndex>();
             Quaternion rot = CurrentFruit.transform.rotation;
 
-            GameObject go = Instantiate(FruitSelector.Instance.Fruits[index.index], CurrentFruit.transform.position, rot);
+            Debug.Log("Throwing fruit with index: " + index.index);
+            Debug.Log(FruitSelector.Instance);
+            GameObject go = Instantiate(FruitSelector.Instance.Fruits[index.index], CurrentFruit.transform.position, rot); 
             go.transform.SetParent(_parentAfterThrow);
 
             Destroy(CurrentFruit);
@@ -65,6 +67,7 @@ public class FruitThrowController : MonoBehaviour
          Bounds = _circleCollider.bounds;
 
         _playerController.ChangeBoundary(EXTRA_WIDTH);
+        _selector.PickNextFruit();
     }
 
 }

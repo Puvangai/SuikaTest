@@ -24,7 +24,7 @@ public class FruitSelector : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance != null)
+        if (Instance == null)
         {
             Instance = this;
         }
@@ -54,19 +54,4 @@ public class FruitSelector : MonoBehaviour
             GameObject nextFruit = NoPyhsicFruits[randomIndex];
         }
     }
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-

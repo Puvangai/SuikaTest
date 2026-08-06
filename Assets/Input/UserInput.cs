@@ -14,7 +14,6 @@ public class UserInput : MonoBehaviour
 
     void Awake()
     {
-        print("Kontrol actionlarını aldım");
         playerInput = GetComponent<PlayerInput>();
         _moveAction = playerInput.actions["Move"];
         _throwAction = playerInput.actions["Throw"];
@@ -22,7 +21,6 @@ public class UserInput : MonoBehaviour
 
     private void Update()
     {
-        print("Actionları okuyarak sürekli takip ediyorum");
         MoveInput = _moveAction.ReadValue<Vector2>();
         IsThrowPressed = _throwAction.WasPressedThisFrame();
     }
