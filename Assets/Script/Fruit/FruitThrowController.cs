@@ -60,6 +60,7 @@ public class FruitThrowController : MonoBehaviour
     public void SpawnAFruit(GameObject fruit)
     {
         // Meyveyi parent olarak _fruitTransform altına doğuruyoruz
+        Debug.Log(fruit, _fruitTransform);
         GameObject go = Instantiate(fruit, _fruitTransform);
 
         // KESİN ÇÖZÜM: Meyvenin yerel pozisyonunu tam (0,0,0) noktasına (yani ThrowFruitTransform'un merkezine) eşitliyoruz

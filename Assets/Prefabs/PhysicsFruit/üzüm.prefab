@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4237796283602311133}
   - component: {fileID: 8658472178193145188}
   - component: {fileID: 696998512781884003}
+  - component: {fileID: -6581820643355902958}
   m_Layer: 0
   m_Name: "\xFCz\xFCm"
   m_TagString: Untagged
@@ -156,3 +157,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-6581820643355902958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079995045928914156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d557e7f9d0ab741ae9c5f2524590ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColliderInformer

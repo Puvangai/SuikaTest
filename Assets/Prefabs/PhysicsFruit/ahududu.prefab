@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6633868789597563545}
   - component: {fileID: 7673304901268542607}
   - component: {fileID: 4632514874272354953}
+  - component: {fileID: -6947769735288428980}
   m_Layer: 0
   m_Name: ahududu
   m_TagString: Untagged
@@ -156,3 +157,15 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: -0.18039183}
   m_Radius: 2.029608
+--- !u!114 &-6947769735288428980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974321681545058367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d557e7f9d0ab741ae9c5f2524590ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ColliderInformer
