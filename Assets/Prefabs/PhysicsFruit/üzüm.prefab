@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8658472178193145188}
   - component: {fileID: 696998512781884003}
   - component: {fileID: -6581820643355902958}
+  - component: {fileID: -99390824006819399}
+  - component: {fileID: 6046097472827480132}
   m_Layer: 0
   m_Name: "\xFCz\xFCm"
   m_TagString: Untagged
@@ -169,3 +171,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d557e7f9d0ab741ae9c5f2524590ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColliderInformer
+--- !u!114 &-99390824006819399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079995045928914156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc79103e8c125c4fa984a1f5829f97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
+--- !u!114 &6046097472827480132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9079995045928914156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner

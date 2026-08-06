@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 4327411308305395292}
   - component: {fileID: 1142160607257683254}
   - component: {fileID: -2488954097042362594}
+  - component: {fileID: -2735423876645831656}
+  - component: {fileID: -5905990730822601208}
   m_Layer: 0
   m_Name: "\u015Feftali"
   m_TagString: Untagged
@@ -169,3 +171,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d557e7f9d0ab741ae9c5f2524590ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColliderInformer
+--- !u!114 &-2735423876645831656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293875093862731642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc79103e8c125c4fa984a1f5829f97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
+--- !u!114 &-5905990730822601208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293875093862731642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1508387798346289452}
   - component: {fileID: 6338948606523799475}
   - component: {fileID: -5408098509572090584}
+  - component: {fileID: -1496892527418807027}
+  - component: {fileID: -8688440396862770772}
   m_Layer: 0
   m_Name: portakal
   m_TagString: Untagged
@@ -169,3 +171,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39d557e7f9d0ab741ae9c5f2524590ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ColliderInformer
+--- !u!114 &-1496892527418807027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168385451620134930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc79103e8c125c4fa984a1f5829f97a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
+--- !u!114 &-8688440396862770772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168385451620134930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner
