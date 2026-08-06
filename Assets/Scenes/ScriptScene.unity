@@ -689,29 +689,29 @@ MonoBehaviour:
   Fruits:
   - {fileID: 1293757183667716765, guid: 796f941061cb92f4ea09cec45c595649, type: 3}
   - {fileID: 2974321681545058367, guid: d66c8711bc8cf80429a57550de0c21c6, type: 3}
-  - {fileID: 8780767387792009986, guid: 8886f2aeaef6fad4786086df74484986, type: 3}
-  - {fileID: 4303080759057974966, guid: d3c0880ae9606024e983e1f301e65a3c, type: 3}
-  - {fileID: 8253962224755691010, guid: dfbf7db574f88574285b5ebbb5de420d, type: 3}
+  - {fileID: 2429635865250947297, guid: 05c04afde563f70458111fbcaa456768, type: 3}
+  - {fileID: 9079995045928914156, guid: a7bb599f733927341a393338d5d6c297, type: 3}
+  - {fileID: 2021397316746819607, guid: 81d611244d733614bad4a7b048762b94, type: 3}
   - {fileID: 5168385451620134930, guid: e994096aaa5169e46b1705fdce71d119, type: 3}
-  - {fileID: 1307303207495919567, guid: 3a045577d30c58741ac0d50d5df0f6e9, type: 3}
+  - {fileID: 5293875093862731642, guid: 0e0340efef0d9c04ebf38b03cf3af72c, type: 3}
   NoPyhsicFruits:
   - {fileID: 324309111248535034, guid: 896cce5992418f0409390943f17492a5, type: 3}
   - {fileID: 3645604171009199543, guid: 93dcd46217878084f8eeb9cf910bbfe3, type: 3}
-  - {fileID: 16263210811828039, guid: b8dd100753ecad54a8e52028df2dafb3, type: 3}
-  - {fileID: 6709361240572460445, guid: eb75c5786d0af6346b44b5599997bf37, type: 3}
-  - {fileID: 8079172725770502518, guid: a794dcd94ca2b14409733f0e17cd4d06, type: 3}
+  - {fileID: 7373499964917763219, guid: 9bcc2d13cc33fb04fafcfb9b54f98d75, type: 3}
+  - {fileID: 4460536618034291286, guid: aff70edd11d9b8b488d3fb63e407dca7, type: 3}
+  - {fileID: 9127018966690940251, guid: 883f68e28c126a747a7fa56c4ead158a, type: 3}
   - {fileID: 2427168826840269140, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
-  - {fileID: 500994015904210309, guid: 492e7b46a14a6e441b6b927d207e6ce3, type: 3}
+  - {fileID: 8702335548019409513, guid: 9b606665bd6ae5849815d079ee6e24c8, type: 3}
   HighestStartingIndex: 3
   _nextFruitImage: {fileID: 1855700071}
   _FruitSprites:
   - {fileID: 21300000, guid: e6cea088202a4fe4fbd32ca6eb84a956, type: 3}
   - {fileID: 21300000, guid: d450468f629999a4487e7ddad32cace1, type: 3}
-  - {fileID: -2007458971190417734, guid: 2ac50877fd1d0374ba866dc70ac09f7f, type: 3}
-  - {fileID: 2534754223378461682, guid: 05d54b9401200db478d5afad35bd2008, type: 3}
-  - {fileID: -8287435652899193867, guid: a7620b40f80e73f46a4ed359d9452b7e, type: 3}
+  - {fileID: 21300000, guid: 2ac50877fd1d0374ba866dc70ac09f7f, type: 3}
+  - {fileID: 21300000, guid: 05d54b9401200db478d5afad35bd2008, type: 3}
+  - {fileID: 21300000, guid: a7620b40f80e73f46a4ed359d9452b7e, type: 3}
   - {fileID: 21300000, guid: f1f3517100606cf489adaa872844d401, type: 3}
-  - {fileID: -4103181685809532377, guid: d37ac79f48fadfd4b902e7b6c8399265, type: 3}
+  - {fileID: 21300000, guid: d37ac79f48fadfd4b902e7b6c8399265, type: 3}
 --- !u!1 &559001423
 GameObject:
   m_ObjectHideFlags: 0
