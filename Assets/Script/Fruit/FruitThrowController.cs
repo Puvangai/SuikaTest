@@ -23,7 +23,7 @@ public class FruitThrowController : MonoBehaviour
     private const float EXTRA_WIDTH = 0.02f;
         
         
-    public bool CanTHrow { get; set; } = true;
+    public bool CanThrow { get; set; } = true;
 
 
     private void Awake()
@@ -37,13 +37,13 @@ public class FruitThrowController : MonoBehaviour
     private void Start()
     {
     _playerController = GetComponent<PlayerController>();
-        SpawnFruit(_selector.PickRandomFruitThrow());
+        SpawnAFruit(_selector.PickRandomFruitThrow());
     }
 
 
     private void Update()
     {
-        if (UserInput.IsThrowPressed && CanTHrow)
+        if (UserInput.IsThrowPressed && CanThrow)
         {
             SpriteIndex index = CurrentFruit.GetComponent<SpriteIndex>();
             Quaternion rot = CurrentFruit.transform.rotation;
@@ -53,16 +53,18 @@ public class FruitThrowController : MonoBehaviour
 
             Destroy(CurrentFruit);
 
-            CanTHrow = false;
+            CanThrow = false;
         }
     }
 
-    public void SpawnFruit(GameObject fruit)
+    public void SpawnAFruit(GameObject fruit)
     {
          GameObject go = Instantiate(fruit, _fruitTransform);
-        CurrentFruit = go;
-        _circleCollider = CurrentFruit.GetComponent<CircleCollider2D>();
-        Bounds = _circleCollider.bounds;
+         CurrentFruit = go;
+         _circleCollider = CurrentFruit.GetComponent<CircleCollider2D>();
+         Bounds = _circleCollider.bounds;
+
+        _playerController.ChangeBoundary(EXTRA_WIDTH);
     }
 
 }

@@ -651,7 +651,6 @@ GameObject:
   m_Component:
   - component: {fileID: 535609635}
   - component: {fileID: 535609637}
-  - component: {fileID: 535609636}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -675,21 +674,6 @@ Transform:
   - {fileID: 1383795549}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &535609636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 535609634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6616834142b549b44be5962fa52efdf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FruitThrowController
-  _fruitTransform: {fileID: 0}
-  _parentAfterThrow: {fileID: 0}
-  _selector: {fileID: 0}
 --- !u!114 &535609637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -702,11 +686,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97e77a4e7de89c145abe8f149f6c354f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitSelector
-  Fruits: []
-  NoPyhsicFruits: []
+  Fruits:
+  - {fileID: 1293757183667716765, guid: 796f941061cb92f4ea09cec45c595649, type: 3}
+  - {fileID: 2974321681545058367, guid: d66c8711bc8cf80429a57550de0c21c6, type: 3}
+  - {fileID: 8780767387792009986, guid: 8886f2aeaef6fad4786086df74484986, type: 3}
+  - {fileID: 4303080759057974966, guid: d3c0880ae9606024e983e1f301e65a3c, type: 3}
+  - {fileID: 8253962224755691010, guid: dfbf7db574f88574285b5ebbb5de420d, type: 3}
+  - {fileID: 5168385451620134930, guid: e994096aaa5169e46b1705fdce71d119, type: 3}
+  - {fileID: 1307303207495919567, guid: 3a045577d30c58741ac0d50d5df0f6e9, type: 3}
+  NoPyhsicFruits:
+  - {fileID: 324309111248535034, guid: 896cce5992418f0409390943f17492a5, type: 3}
+  - {fileID: 3645604171009199543, guid: 93dcd46217878084f8eeb9cf910bbfe3, type: 3}
+  - {fileID: 16263210811828039, guid: b8dd100753ecad54a8e52028df2dafb3, type: 3}
+  - {fileID: 6709361240572460445, guid: eb75c5786d0af6346b44b5599997bf37, type: 3}
+  - {fileID: 8079172725770502518, guid: a794dcd94ca2b14409733f0e17cd4d06, type: 3}
+  - {fileID: 2427168826840269140, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
+  - {fileID: 500994015904210309, guid: 492e7b46a14a6e441b6b927d207e6ce3, type: 3}
   HighestStartingIndex: 3
-  _nextFruitImage: {fileID: 0}
-  _FruitSprites: []
+  _nextFruitImage: {fileID: 2046259321}
+  _FruitSprites:
+  - {fileID: 21300000, guid: e6cea088202a4fe4fbd32ca6eb84a956, type: 3}
+  - {fileID: 21300000, guid: d450468f629999a4487e7ddad32cace1, type: 3}
+  - {fileID: -2007458971190417734, guid: 2ac50877fd1d0374ba866dc70ac09f7f, type: 3}
+  - {fileID: 2534754223378461682, guid: 05d54b9401200db478d5afad35bd2008, type: 3}
+  - {fileID: -8287435652899193867, guid: a7620b40f80e73f46a4ed359d9452b7e, type: 3}
+  - {fileID: 21300000, guid: f1f3517100606cf489adaa872844d401, type: 3}
+  - {fileID: -4103181685809532377, guid: d37ac79f48fadfd4b902e7b6c8399265, type: 3}
 --- !u!1 &559001423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1377,6 +1382,7 @@ GameObject:
   - component: {fileID: 1284418526}
   - component: {fileID: 1284418525}
   - component: {fileID: 1284418524}
+  - component: {fileID: 1284418528}
   m_Layer: 0
   m_Name: PLAYER
   m_TagString: Untagged
@@ -1541,6 +1547,21 @@ Transform:
   - {fileID: 589169082}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1284418528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284418523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6616834142b549b44be5962fa52efdf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FruitThrowController
+  _fruitTransform: {fileID: 1855495381}
+  _parentAfterThrow: {fileID: 535609635}
+  _selector: {fileID: 535609637}
 --- !u!1 &1368472002
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,7 +2164,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e6cea088202a4fe4fbd32ca6eb84a956, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2338,7 +2359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8084952, g: 0.8415094, b: 0.40487713, a: 1}
+  m_Color: {r: 0.76293147, g: 0.81886786, b: 0.72153074, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

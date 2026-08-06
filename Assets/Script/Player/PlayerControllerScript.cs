@@ -47,4 +47,13 @@ public class PlayerController : MonoBehaviour
        transform.position = newPosition;
     }
 
+
+    public void ChangeBoundary(float extraWidth)
+    {
+        _leftBound = _startingLeftBound;
+        _rightBound = _startingRightBound;
+
+        _leftBound += FruitThrowController.Instance.Bounds.extents.x + extraWidth;
+        _rightBound -= FruitThrowController.Instance.Bounds.extents.x + extraWidth;
+    }
 }

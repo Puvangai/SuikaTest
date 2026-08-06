@@ -2,5 +2,5 @@ using UnityEngine;
 
 public class SpriteIndex : MonoBehaviour
 {
-    public int index= 0;
+    public int index = 0;
 }
