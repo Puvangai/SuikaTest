@@ -1,26 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System.Collections.Generic;
-using System.Collections;
 
 public class FruitSelector : MonoBehaviour
 {
-
-
     public static FruitSelector Instance;
 
-
-    public GameObject[] Fruits; // Meyvelerin prefablarını tutan dizi
-    public GameObject[] NoPyhsicFruits;
+    public GameObject[] Fruits;         // Fizikli meyveler
+    public GameObject[] NoPyhsicFruits; // Fiziksiz meyveler (Elde tutulan)
     public int HighestStartingIndex = 3;
-
 
     [SerializeField] private Image _nextFruitImage;
     [SerializeField] private Sprite[] _FruitSprites;
 
-
-    public GameObject NextFruit { get; private set; } // Bir sonraki meyveyi temsil eden GameObject
-
+    public GameObject NextFruit { get; private set; } // UI'da gösterilen ve SIRADAKİ gelecek meyve
 
     private void Awake()
     {
@@ -32,40 +24,42 @@ public class FruitSelector : MonoBehaviour
 
     private void Start()
     {
+        // Oyuna başlarken kuyruğa ilk "Sonraki Meyve"yi seçip resmi yüklüyoruz
         PickNextFruit();
     }
 
-    public GameObject PickRandomFruitThrow()
+    /// <summary>
+    /// Sıradaki meyveyi ele verir ve UI paneli için YENİ bir sonraki meyve seçip resmini günceller.
+    /// </summary>
+    public GameObject GetNextFruitAndRollNew()
     {
-        int randomIndex = Random.Range(0, HighestStartingIndex + 1); // 0 ile HighestStartingIndex arasında rastgele bir indeks seçiyoruz
+        // 1. Şu an UI'da görünen meyveyi ele vermek üzere saklıyoruz
+        GameObject fruitToSpawn = NextFruit;
 
-        if (randomIndex < NoPyhsicFruits.Length)
-        {
-            GameObject randomFruit = NoPyhsicFruits[randomIndex];
-            return randomFruit;
-        }
+        // 2. UI için yeni bir sonraki meyve seçip görseli güncelliyoruz
+        PickNextFruit();
 
-        return null; // Eğer rastgele indeks, meyve dizisinin boyutunu aşarsa null döndürüyoruz
+        // 3. Sakladığımız meyveyi ele doğurulması için döndürüyoruz
+        return fruitToSpawn;
     }
 
+    /// <summary>
+    /// Rastgele yeni bir "NextFruit" seçer ve UI üzerindeki Image'i günceller.
+    /// </summary>
     public void PickNextFruit()
     {
-        int randomIndex = Random.Range(0, HighestStartingIndex + 1);
+        if (NoPyhsicFruits == null || NoPyhsicFruits.Length == 0) return;
 
-        if (randomIndex < NoPyhsicFruits.Length)
-        {
-            // "GameObject" kelimesini kaldırdık! Doğrudan property'ye atıyoruz:
-            NextFruit = NoPyhsicFruits[randomIndex];
+        int maxIndex = Mathf.Min(HighestStartingIndex + 1, NoPyhsicFruits.Length);
+        int randomIndex = Random.Range(0, maxIndex);
 
-            // Eğer UI üzerindeki resmi de değiştireceksen:
-            if (_nextFruitImage != null && _FruitSprites.Length > randomIndex)
-            {
-                _nextFruitImage.sprite = _FruitSprites[randomIndex];
-            }
-        }
-        else
+        // Sıradaki meyveyi belirliyoruz
+        NextFruit = NoPyhsicFruits[randomIndex];
+
+        // UI üzerindeki görseli sıradaki meyvenin sprite'ı yapıyoruz
+        if (_nextFruitImage != null && _FruitSprites != null && randomIndex < _FruitSprites.Length)
         {
-            Debug.LogError("Rastgele seçilen indeks NoPyhsicFruits dizisini aşıyor!");
+            _nextFruitImage.sprite = _FruitSprites[randomIndex];
         }
     }
 }

@@ -37,7 +37,8 @@ public class FruitThrowController : MonoBehaviour
     private void Start()
     {
     _playerController = GetComponent<PlayerController>();
-        SpawnAFruit(_selector.PickRandomFruitThrow());
+        // ÖRNEK: Oyuna başlarken veya meyve düştüğünde yeni meyveyi ele getirme:
+        SpawnAFruit(_selector.GetNextFruitAndRollNew());
     }
 
 
