@@ -725,6 +725,9 @@ MonoBehaviour:
   - {fileID: 2021397316746819607, guid: 81d611244d733614bad4a7b048762b94, type: 3}
   - {fileID: 5168385451620134930, guid: e994096aaa5169e46b1705fdce71d119, type: 3}
   - {fileID: 5293875093862731642, guid: 0e0340efef0d9c04ebf38b03cf3af72c, type: 3}
+  - {fileID: 2034583400507847530, guid: a0b995912aefb6142a561209a9608a28, type: 3}
+  - {fileID: 4796260587612897254, guid: 2cfccbc1c42bfc64eafc30af83a49ae1, type: 3}
+  - {fileID: 1537772749546403204, guid: 1657c5e88ee7260448a2e7cb2bf5fc4d, type: 3}
   NoPyhsicFruits:
   - {fileID: 324309111248535034, guid: 896cce5992418f0409390943f17492a5, type: 3}
   - {fileID: 3645604171009199543, guid: 93dcd46217878084f8eeb9cf910bbfe3, type: 3}
@@ -733,6 +736,9 @@ MonoBehaviour:
   - {fileID: 9127018966690940251, guid: 883f68e28c126a747a7fa56c4ead158a, type: 3}
   - {fileID: 2427168826840269140, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
   - {fileID: 8702335548019409513, guid: 9b606665bd6ae5849815d079ee6e24c8, type: 3}
+  - {fileID: 5461512598956639038, guid: 3a149f56519f9d14d8e0b994746fe682, type: 3}
+  - {fileID: 1064996813546149589, guid: 77166ecb48232314eaa30d7c18e57dbd, type: 3}
+  - {fileID: 2267494505459125142, guid: e038dad624270e24ab25f1fed7ef6a65, type: 3}
   HighestStartingIndex: 4
   _nextFruitImage: {fileID: 1855700071}
   _FruitSprites:
@@ -743,6 +749,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: a7620b40f80e73f46a4ed359d9452b7e, type: 3}
   - {fileID: 21300000, guid: f1f3517100606cf489adaa872844d401, type: 3}
   - {fileID: 21300000, guid: d37ac79f48fadfd4b902e7b6c8399265, type: 3}
+  - {fileID: 21300000, guid: cdea08602d0d4ce43b119c55098dd6e2, type: 3}
+  - {fileID: 21300000, guid: ca100d4d9711f3f429d7c829cb3912fe, type: 3}
+  - {fileID: 21300000, guid: 7e67e8b49e7387d4fbe2c7bc7ca84752, type: 3}
 --- !u!1 &559001423
 GameObject:
   m_ObjectHideFlags: 0
