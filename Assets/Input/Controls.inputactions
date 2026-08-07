@@ -192,59 +192,15 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "Android",
-                    "id": "5052507e-8273-4603-9e3a-1a7a67c5db25",
-                    "path": "2DVector",
+                    "name": "",
+                    "id": "036149c9-570a-4a45-9942-621cd9836fb3",
+                    "path": "<Touchscreen>/primaryTouch/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Move",
-                    "isComposite": true,
+                    "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "faec0550-1d21-46de-a4ce-08f25d57244c",
-                    "path": "<Touchscreen>/delta/up",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "dba4aa53-a7aa-4faa-b028-1089346db141",
-                    "path": "<Touchscreen>/delta/down",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "9d930576-158d-45d9-b3b1-1f07def256eb",
-                    "path": "<Touchscreen>/delta/left",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "c00017d8-46c8-4a8e-87ee-84a843d82e7c",
-                    "path": "<Touchscreen>/delta/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Move",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -272,7 +228,7 @@
                     "name": "",
                     "id": "158d678e-f31a-4ff0-b53e-0e9180f64ffc",
                     "path": "<Touchscreen>/Press",
-                    "interactions": "",
+                    "interactions": "Press(behavior=1)",
                     "processors": "",
                     "groups": "",
                     "action": "Throw",
