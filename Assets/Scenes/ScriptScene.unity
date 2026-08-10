@@ -1457,6 +1457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AimLineController
   _fruitThrowTransform: {fileID: 155285861}
   _bottomTransform: {fileID: 278512072}
+  _sensitivity: 0.02
 --- !u!114 &1284418525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1470,6 +1471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   _movespeed: 5
+  _smoothSpeed: 15
   _boundaries: {fileID: 1932758397}
   _fruitThrowTransform: {fileID: 155285861}
 --- !u!120 &1284418526

@@ -21,21 +21,37 @@ public class UserInput : MonoBehaviour
 
     private void Update()
     {
+
         MoveInput = _moveAction.ReadValue<Vector2>();
 
-        // 1. PC & Gamepad Mantığı: Klavyede Space veya Gamepad butonuna BASILDIĞI AN (Dokunmatik hariç)
-        bool isPCorGamepadPress = _throwAction.WasPressedThisFrame() &&
-                                 !(Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed);
-
-        // 2. Android / Dokunmatik Mantığı: Parmağın ekrandan KALKTIĞI AN
-        // Doğrudan cihaz donanımından parmağın çekilip çekilmediğini kontrol ediyoruz.
-        bool isAndroidTouchRelease = false;
         if (Touchscreen.current != null)
         {
-            isAndroidTouchRelease = Touchscreen.current.primaryTouch.press.wasReleasedThisFrame;
+            var touch = Touchscreen.current.primaryTouch;
+
+
+            if (touch.press.isPressed)
+            {
+                MoveInput = touch.position.ReadValue();
+            }
         }
 
-        // Parmağını ekrandan kaldırdığın an bu değer "true" olur ve tıklanmış gibi fırlatır!
-        IsThrowPressed = isPCorGamepadPress || isAndroidTouchRelease;
+        bool isPCorGamepadPress =
+            _throwAction.WasPressedThisFrame() &&
+            !(Touchscreen.current != null &&
+              Touchscreen.current.primaryTouch.press.isPressed);
+
+        bool isAndroidTouchRelease = false;
+
+        if (Touchscreen.current != null)
+        {
+            isAndroidTouchRelease =
+                Touchscreen.current.primaryTouch.press
+                .wasReleasedThisFrame;
+        }
+
+
+        IsThrowPressed =
+            isPCorGamepadPress ||
+            isAndroidTouchRelease;
     }
 }
