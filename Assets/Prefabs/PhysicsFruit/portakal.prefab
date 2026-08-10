@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: -5408098509572090584}
   - component: {fileID: -1496892527418807027}
   - component: {fileID: -8688440396862770772}
-  m_Layer: 0
+  - component: {fileID: 738966725127205632}
+  m_Layer: 8
   m_Name: portakal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
   FruitIndex: 5
-  PointWhenAnnihilated: 15
+  PointWhenAnnihilated: 21
   FruitMass: 1.1
 --- !u!114 &-8688440396862770772
 MonoBehaviour:
@@ -198,3 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner
+--- !u!114 &738966725127205632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5168385451620134930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974336e43d74f6a4a9892ca5574354f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerLost

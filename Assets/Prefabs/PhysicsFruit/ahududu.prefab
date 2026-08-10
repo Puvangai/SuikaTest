@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: -6947769735288428980}
   - component: {fileID: -9148304005418163381}
   - component: {fileID: -8787597782842287484}
-  m_Layer: 0
+  - component: {fileID: 5580584711217375837}
+  m_Layer: 8
   m_Name: ahududu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,3 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner
+--- !u!114 &5580584711217375837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2974321681545058367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974336e43d74f6a4a9892ca5574354f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerLost

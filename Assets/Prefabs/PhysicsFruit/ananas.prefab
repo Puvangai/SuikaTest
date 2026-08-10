@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 8607157608662324806}
   - component: {fileID: -7435772070079434467}
   - component: {fileID: 8549330384777012017}
-  m_Layer: 0
+  - component: {fileID: 4830915762884747605}
+  m_Layer: 8
   m_Name: ananas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -185,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
   FruitIndex: 7
-  PointWhenAnnihilated: 28
+  PointWhenAnnihilated: 36
   FruitMass: 1
 --- !u!114 &8549330384777012017
 MonoBehaviour:
@@ -199,3 +200,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner
+--- !u!114 &4830915762884747605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034583400507847530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974336e43d74f6a4a9892ca5574354f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerLost

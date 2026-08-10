@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: -2488954097042362594}
   - component: {fileID: -2735423876645831656}
   - component: {fileID: -5905990730822601208}
-  m_Layer: 0
+  - component: {fileID: 2713669477252934127}
+  m_Layer: 8
   m_Name: "\u015Feftali"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
   FruitIndex: 6
-  PointWhenAnnihilated: 21
+  PointWhenAnnihilated: 28
   FruitMass: 1.05
 --- !u!114 &-5905990730822601208
 MonoBehaviour:
@@ -198,3 +199,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667dfcd148aa14a43b13c19c3386044b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitCombiner
+--- !u!114 &2713669477252934127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293875093862731642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 974336e43d74f6a4a9892ca5574354f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerLost
