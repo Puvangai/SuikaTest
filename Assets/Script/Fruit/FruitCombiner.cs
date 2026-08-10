@@ -30,6 +30,8 @@ public class FruitCombiner : MonoBehaviour
 
                     if (thisID > otherID)
                     {
+                        GameManager.Instance.IncreaseScore(info. PointWhenAnnihilated);
+
                         if (_info.FruitIndex == FruitSelector.Instance.Fruits.Length - 1)
                         {
                             Destroy(collision.gameObject);
