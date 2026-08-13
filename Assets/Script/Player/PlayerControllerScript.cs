@@ -3,7 +3,6 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _movespeed = 5f;
-    [SerializeField] private float _smoothSpeed = 15f; // Sadece Android sürükleme pürüzsüzlüğü için
     [SerializeField] private BoxCollider2D _boundaries;
     [SerializeField] private Transform _fruitThrowTransform;
 
@@ -38,31 +37,49 @@ public class PlayerController : MonoBehaviour
         Vector2 input = UserInput.MoveInput;
 
         // =======================================================
-        // A) ANDROID / DOKUNMATİK MODU 
-        // Dokunmatikten gelen koordinat piksel olduğu için x veya y değeri 1'den büyüktür.
+        // ANDROID / TOUCH
+        // Parmağın ekran üzerindeki X pozisyonunu direkt takip eder.
         // =======================================================
         if (Mathf.Abs(input.x) > 1f || Mathf.Abs(input.y) > 1f)
         {
-            Vector3 worldPos = _mainCamera.ScreenToWorldPoint(new Vector3(input.x, input.y, _mainCamera.nearClipPlane));
+            Vector3 worldPos = _mainCamera.ScreenToWorldPoint(
+                new Vector3(input.x, input.y, _mainCamera.nearClipPlane)
+            );
 
-            // Senin dinamik sınırların içine hapsediyoruz
-            float targetX = Mathf.Clamp(worldPos.x, _leftBound, _rightBound);
+            float targetX = Mathf.Clamp(
+                worldPos.x,
+                _leftBound,
+                _rightBound
+            );
 
-            // Yağ gibi kayması için Lerp kullanıyoruz
-            float smoothX = Mathf.Lerp(transform.position.x, targetX, Time.deltaTime * _smoothSpeed);
-
-            transform.position = new Vector3(smoothX, transform.position.y, transform.position.z);
+            transform.position = new Vector3(
+                targetX,
+                transform.position.y,
+                transform.position.z
+            );
         }
-        // =======================================================
-        // B) PC / KLAVYE / GAMEPAD MODU 
-        // Klavyeden gelen girdi (-1, 0, 1) arasındadır. Önceki kodun BİREBİR AYNISI çalışır.
-        // =======================================================
-        else if (input.x != 0)
-        {
-            Vector3 newPosition = transform.position + new Vector3(input.x * _movespeed * Time.deltaTime, 0f, 0f);
-            newPosition.x = Mathf.Clamp(newPosition.x, _leftBound, _rightBound);
 
-            transform.position = newPosition;
+        // =======================================================
+        // PC / GAMEPAD
+        // Input değerine göre hareket eder.
+        // =======================================================
+        else if (Mathf.Abs(input.x) > 0.01f)
+        {
+            float movement = input.x * _movespeed * Time.deltaTime;
+
+            float targetX = transform.position.x + movement;
+
+            targetX = Mathf.Clamp(
+                targetX,
+                _leftBound,
+                _rightBound
+            );
+
+            transform.position = new Vector3(
+                targetX,
+                transform.position.y,
+                transform.position.z
+            );
         }
     }
 

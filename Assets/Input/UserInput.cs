@@ -37,21 +37,16 @@ public class UserInput : MonoBehaviour
 
         bool isPCorGamepadPress =
             _throwAction.WasPressedThisFrame() &&
-            !(Touchscreen.current != null &&
-              Touchscreen.current.primaryTouch.press.isPressed);
+            !(Touchscreen.current != null && Touchscreen.current.primaryTouch.press.isPressed);
 
         bool isAndroidTouchRelease = false;
 
         if (Touchscreen.current != null)
         {
-            isAndroidTouchRelease =
-                Touchscreen.current.primaryTouch.press
-                .wasReleasedThisFrame;
+            isAndroidTouchRelease = Touchscreen.current.primaryTouch.press.wasReleasedThisFrame;
         }
 
 
-        IsThrowPressed =
-            isPCorGamepadPress ||
-            isAndroidTouchRelease;
+        IsThrowPressed =isPCorGamepadPress || isAndroidTouchRelease;
     }
 }
