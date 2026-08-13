@@ -767,8 +767,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   _scoreText: {fileID: 1959680201}
   _gameOverPanel: {fileID: 1632768774}
-  _fadeTime: 2
-  TimeTillGameOver: 1.5
+  _fadeTime: 1
+  TimeTillGameOver: 0.5
 --- !u!1 &559001423
 GameObject:
   m_ObjectHideFlags: 0
@@ -1475,7 +1475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
   _movespeed: 5
-  _smoothSpeed: 15
   _boundaries: {fileID: 1932758397}
   _fruitThrowTransform: {fileID: 155285861}
 --- !u!120 &1284418526
