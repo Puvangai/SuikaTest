@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ea37ea5f23513a340a6643b3ef2adcdf
+guid: e5c31191955fbf84bbba7bece60ebf40
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7940969104758447589
-    second: "\xC7al\u0131\u015Fma Y\xFCzeyi 1_0"
+      213: -7703123069723363096
+    second: "Varl\u0131k 1@2x_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\xC7al\u0131\u015Fma Y\xFCzeyi 1_0"
+      name: "Varl\u0131k 1@2x_0"
       rect:
         serializedVersion: 2
-        x: 321
-        y: 406
-        width: 196
-        height: 290
+        x: 0
+        y: 0
+        width: 388
+        height: 577
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ed9a75e35df33e60800000000000000
-      internalID: 7940969104758447589
+      spriteID: 8e8b5088162091590800000000000000
+      internalID: -7703123069723363096
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\xC7al\u0131\u015Fma Y\xFCzeyi 1_0": 7940969104758447589
+      "Varl\u0131k 1@2x_0": -7703123069723363096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
