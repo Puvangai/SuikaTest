@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 155285860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.04, y: 1.13, z: 0}
+  m_LocalPosition: {x: -1.11, y: 1.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -723,16 +723,16 @@ MonoBehaviour:
   - {fileID: 4796260587612897254, guid: 2cfccbc1c42bfc64eafc30af83a49ae1, type: 3}
   - {fileID: 1537772749546403204, guid: 1657c5e88ee7260448a2e7cb2bf5fc4d, type: 3}
   NoPyhsicFruits:
-  - {fileID: 324309111248535034, guid: 896cce5992418f0409390943f17492a5, type: 3}
-  - {fileID: 3645604171009199543, guid: 93dcd46217878084f8eeb9cf910bbfe3, type: 3}
-  - {fileID: 7373499964917763219, guid: 9bcc2d13cc33fb04fafcfb9b54f98d75, type: 3}
-  - {fileID: 4460536618034291286, guid: aff70edd11d9b8b488d3fb63e407dca7, type: 3}
-  - {fileID: 9127018966690940251, guid: 883f68e28c126a747a7fa56c4ead158a, type: 3}
-  - {fileID: 2427168826840269140, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
-  - {fileID: 8702335548019409513, guid: 9b606665bd6ae5849815d079ee6e24c8, type: 3}
-  - {fileID: 5461512598956639038, guid: 3a149f56519f9d14d8e0b994746fe682, type: 3}
-  - {fileID: 1064996813546149589, guid: 77166ecb48232314eaa30d7c18e57dbd, type: 3}
-  - {fileID: 2267494505459125142, guid: e038dad624270e24ab25f1fed7ef6a65, type: 3}
+  - {fileID: 5744162145486293442, guid: 896cce5992418f0409390943f17492a5, type: 3}
+  - {fileID: 4978946978659879220, guid: 93dcd46217878084f8eeb9cf910bbfe3, type: 3}
+  - {fileID: 137046985898862191, guid: 9bcc2d13cc33fb04fafcfb9b54f98d75, type: 3}
+  - {fileID: 9017434546918769654, guid: aff70edd11d9b8b488d3fb63e407dca7, type: 3}
+  - {fileID: 7828738633299408145, guid: 883f68e28c126a747a7fa56c4ead158a, type: 3}
+  - {fileID: 3264602068424760821, guid: 3d18fd320ae0563468936f844f73a06c, type: 3}
+  - {fileID: 6963514703497442027, guid: 9b606665bd6ae5849815d079ee6e24c8, type: 3}
+  - {fileID: 4694179326368935126, guid: 3a149f56519f9d14d8e0b994746fe682, type: 3}
+  - {fileID: 1101887395939019613, guid: 77166ecb48232314eaa30d7c18e57dbd, type: 3}
+  - {fileID: 2937277384087598413, guid: e038dad624270e24ab25f1fed7ef6a65, type: 3}
   HighestStartingIndex: 4
   _nextFruitImage: {fileID: 1163171296}
   _FruitSprites:
@@ -942,7 +942,7 @@ Transform:
   m_GameObject: {fileID: 589169081}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.69, y: 0.655, z: 0}
+  m_LocalPosition: {x: -1.11, y: 1.25, z: 0}
   m_LocalScale: {x: 0.14214, y: 0.14214, z: 0.4738}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1607,8 +1607,8 @@ LineRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Positions:
-  - {x: -0.07999998, y: 1.86, z: 0}
-  - {x: -0.07999998, y: -4.46, z: 0}
+  - {x: -0.15000004, y: 1.86, z: 0}
+  - {x: -0.15000004, y: -4.46, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

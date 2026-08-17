@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FruitInfo
   FruitIndex: 3
-  PointWhenAnnihilated: 6
+  PointWhenAnnihilated: 63
   FruitMass: 1.2
 --- !u!114 &6046097472827480132
 MonoBehaviour:
