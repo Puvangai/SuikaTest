@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 71df84face6a72d43b236c61a84a1176
+guid: af2769f1be99c1440b3fe5358444a19c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7043352461540034774
-    second: "kutu\xF6n_0"
+      213: 1734060023753906096
+    second: "Varl\u0131k 5@2x_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "kutu\xF6n_0"
+      name: "Varl\u0131k 5@2x_0"
       rect:
         serializedVersion: 2
-        x: 42
-        y: 41
-        width: 989
-        height: 1427
+        x: 0
+        y: 0
+        width: 386
+        height: 545
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d887f91fb30fb160800000000000000
-      internalID: 7043352461540034774
+      spriteID: 0b79e07776e901810800000000000000
+      internalID: 1734060023753906096
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "kutu\xF6n_0": 7043352461540034774
+      "Varl\u0131k 5@2x_0": 1734060023753906096
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
